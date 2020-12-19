@@ -1,28 +1,40 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="container">
+  <h1 class="main__header">Todo List Pro</h1>
+  <Todo/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Todo from "./components/todo.vue"
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "App",
+  components : {
+    Todo
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.main__header{
+  color: white;
+  background-color: black;
+   text-align: center;
+  font-family: 'Poppins', sans-serif;
+
 }
+.container{
+ display: flex;
+ flex-direction: column;
+   background-color: black;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
 </style>
